@@ -4000,9 +4000,11 @@
 /* Footer */
 
 	#footer {
-		background-color: #f7f7f7;
-		color: #444;
-		padding: 5em 0 4em 0;
+		/*background-color: #f7f7f7;
+		color: #444;*/
+		background-color: #000000;
+		color: #000;
+		padding: 1em 0 1em 0;
 		position: relative;
 	}
 
@@ -4038,7 +4040,7 @@
 		#footer:before {
 			background-color: #ddd;
 			content: '';
-			height: 1px;
+			height: 0px;
 			left: 30%;
 			position: absolute;
 			top: 0;
@@ -4046,7 +4048,7 @@
 		}
 
 		#footer .copyright {
-			color: #bbb;
+			color: #fff;
 			font-size: 0.9em;
 			margin: 0 0 2em 0;
 			padding: 0;
@@ -4116,3 +4118,4 @@
 			}
 
 		}
+
