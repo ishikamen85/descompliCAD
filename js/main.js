@@ -63,6 +63,38 @@ btn.addEventListener('click', function() {
 }, false);
 
 
+$('.contact1-form').on('sendmail',function(){
+        //optional validation code here
+  
+        e.preventDefault();
+      
+        $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbxuSCQS7maeU-2N3E7T0fgqGlby5bGOEmLSvmh2/exec",
+            method: "POST",
+            dataType: "json",
+            data: $(".contact1-form").serialize(),
+            success: function(response) {
+                
+                if(response.result == "success") {
+                    $('.contact1-form')[0].reset();
+                    alert('Thank you for contacting us.');
+                    return true;
+                }
+                else {
+                    alert("Something went wrong. Please try again.")
+                }
+            },
+            error: function() {
+                
+                alert("Something went wrong. Please try again.")
+            }
+        })
+    });
+
+
+/*https://script.google.com/macros/s/AKfycbw_PXswePQn2ybHbQN3GxY_GZRHlk9jGHT3h9fAXA/exec*/
+
+
 !function(e){var t={};function n(r){if(t[r])return t[r].exports;var a=t[r]={i:r,l:!1,exports:{}};return e[r].call(a.exports,a,a.exports,n),a.l=!0,a.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var a in e)n.d(r,a,function(t){return e[t]}.bind(null,a));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=62)}([function(e,t,n){e.exports=n(12)()},function(e,t,n){"use strict";e.exports=n(7)},,,,function(e,t,n){"use strict";
 /*
 object-assign

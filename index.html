@@ -11,7 +11,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	
 <body>
-	
+	<script src="js/main.js"></script>
 	<!-- Banner -->
 			<section id="banner" style="padding-top: 10px;padding-bottom: 10px;">
 				
@@ -67,31 +67,35 @@
 <!--<h1>Hello World</h1>-->
 <!-- Two -->
 			<section id="contato" class="wrapper style1 special">
-				
+				<!--<script src="js/mail.js"></script>
+				<script src="assets/js/mail.js"></script>
+				-->
 				<div class="inner narrow">
-					<header>
+						<header>
 						<h2>Fale Conosco</h2>
 					</header>
-					<form class="grid-form" method="post" action="https://formspree.io/f/xknkgndq">
+					<form class="grid-form" method="post" action="">
 						<div class="form-control narrow">
 							<label for="name">Nome</label>
-							<input name="name" id="name" type="text">
+							<input name="name" id="name" type="text" required>
 						</div>
 						<div class="form-control narrow">
 							<label for="email">Email</label>
-							<input name="email" id="email" type="email">
+							<input name="email" id="email" type="email" required>
 						</div>
 						<div class="form-control">
 							<label for="message">Mensagem</label>
 							<textarea name="message" id="message" rows="4"></textarea>
 						</div>
 						<ul class="actions">
-							<li><input value="Enviar" type="submit"></li>
+							<li><input type="submit" value="Enviar" ></li>
+							<li><input type="reset" value="Limpar formulário" ></li>
 						</ul>
+
 					</form>
 				</div>
+				</div>
 			</section>
-
 
 
 <!-- Dos -->
@@ -408,7 +412,7 @@
 								<li><span class="button disabled">Default</span></li>
 								<li><span class="button alt disabled">Alternate</span></li>
 							</ul>
-
+-->
 							<h3>Form</h3>
 							<form method="post" action="#">
 								<div class="row uniform">
@@ -473,7 +477,7 @@
 									</div>
 								</div>
 							</form>
-
+<!--
 							<h3>Image</h3>
 							<h4>Fit</h4>
 							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
