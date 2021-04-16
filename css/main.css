@@ -2870,7 +2870,7 @@
 			.wrapper.style1 button,
 			.wrapper.style1 .button {
 				background-color: #f7f7f7;
-				color: #555 !important;
+				color: #000 !important;
 			}
 
 				.wrapper.style1 input[type="submit"]:hover,
@@ -2878,7 +2878,9 @@
 				.wrapper.style1 input[type="button"]:hover,
 				.wrapper.style1 button:hover,
 				.wrapper.style1 .button:hover {
-					background-color: white;
+					/*background-color: #DFA520;*/
+					background-color:  #b3b3b3;
+					color: #111 !important;
 				}
 
 				.wrapper.style1 input[type="submit"]:active,
@@ -3001,7 +3003,8 @@
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
-				color: #99ebeb !important;
+				/*color: #99ebeb !important;*/
+				color: #EEEEEE !important;
 			}
 
 			.wrapper.style1 :-moz-placeholder {
@@ -4165,3 +4168,8 @@
 
 		}
 
+/* vertical line */
+.vl {
+  border-left: 1px white;
+  height: 500px;
+}
